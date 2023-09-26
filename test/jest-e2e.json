@@ -1,0 +1,21 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@app/advance-auth/(.*)": "<rootDir>/../libs/advance-auth/src/$1",
+    "@app/advance-auth": "<rootDir>/../libs/advance-auth/src",
+    "@app/advance-profile/(.*)": "<rootDir>/../libs/advance-profile/src/$1",
+    "@app/advance-profile": "<rootDir>/../libs/advance-profile/src",
+    "@app/advance-product/(.*)": "<rootDir>/../libs/advance-product/src/$1",
+    "@app/advance-product": "<rootDir>/../libs/advance-product/src"
+  }
+}

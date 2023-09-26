@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "projects": {
+    "advance-auth": {
+      "type": "library",
+      "root": "libs/advance-auth",
+      "entryFile": "index",
+      "sourceRoot": "libs/advance-auth/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/advance-auth/tsconfig.lib.json"
+      }
+    },
+    "advance-profile": {
+      "type": "library",
+      "root": "libs/advance-profile",
+      "entryFile": "index",
+      "sourceRoot": "libs/advance-profile/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/advance-profile/tsconfig.lib.json"
+      }
+    },
+    "advance-product": {
+      "type": "library",
+      "root": "libs/advance-product",
+      "entryFile": "index",
+      "sourceRoot": "libs/advance-product/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/advance-product/tsconfig.lib.json"
+      }
+    }
+  }
+}
